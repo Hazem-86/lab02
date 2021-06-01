@@ -1,0 +1,11 @@
+### Rebasing starts with the common ancestor of two branches: the one you’re on and the one you’re rebasing onto. Then, the diffs resulting from each commit of your current branch are saved to temporary files, and the current branch gets reset to the same commit as that of the branch you are rebasing onto. Last but not least, all changes get applied to the branch you are rebasing onto.
+## This process essentially rewrites a project’s history by replaying all changes committed on one branch to another one, leading to cleaner application of commits on a remote branch and a linear history.
+# Example:
+![image046](https://user-images.githubusercontent.com/85110417/120383761-f23d9980-c32d-11eb-829e-74ac75cf7d14.png)
+
+
+### With a fast-forward merge, your current branch’s pointer moves forward to the most recent commit for the branch being merged in – there is no divergent work to merge together because the latter branch is directly upstream in relation to the former one.
+# Example:
+
+![image054](https://user-images.githubusercontent.com/85110417/120383929-2749ec00-c32e-11eb-8d30-afa218ebc936.png)
+
